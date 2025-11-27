@@ -1,5 +1,3 @@
-本项目正在极速开发中...
-
 # MangaColor-Banana 🍌 
 
 由 Nano Banana Pro 驱动的交互式、可控的一键式漫画上色工具
@@ -22,15 +20,15 @@
 
 ### 前端
 - Electron + React + TypeScript
-- Vite (构建工具)
-- Tailwind CSS + Ant Design (UI)
-- Zustand (状态管理)
+- Vite
+- Tailwind CSS + Ant Design
+- Zustand
 
 ### 后端
 - Python + FastAPI
-- PyMuPDF (PDF 处理)
-- Google Generative AI (Gemini API)
-- WebSocket (实时通信)
+- PyMuPDF
+- Google Generative AI
+- WebSocket
 
 ## 快速开始
 
