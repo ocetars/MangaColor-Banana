@@ -1,0 +1,2 @@
+# MangaColor-G Backend Application
+

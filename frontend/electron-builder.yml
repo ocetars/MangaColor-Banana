@@ -1,0 +1,72 @@
+appId: com.mangacolor.app
+productName: MangaColor-G
+copyright: Copyright © 2024 MangaColor-G
+
+directories:
+  output: release/${version}
+  buildResources: build
+
+files:
+  - dist/**/*
+  - dist-electron/**/*
+
+extraResources:
+  - from: ../backend/dist/
+    to: backend
+    filter:
+      - "**/*"
+
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: build/icon.icns
+  category: public.app-category.graphics-design
+  hardenedRuntime: true
+  gatekeeperAssess: false
+
+dmg:
+  artifactName: ${productName}-${version}-${arch}.${ext}
+  contents:
+    - x: 130
+      y: 220
+    - x: 410
+      y: 220
+      type: link
+      path: /Applications
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: ${productName}-${version}-Setup.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  deleteAppDataOnUninstall: false
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  installerHeaderIcon: build/icon.ico
+
+linux:
+  target:
+    - target: deb
+      arch:
+        - x64
+    - target: AppImage
+      arch:
+        - x64
+  icon: build/icons
+  category: Graphics
+  maintainer: MangaColor-G Team
+
+publish:
+  provider: github
+  releaseType: release
+
