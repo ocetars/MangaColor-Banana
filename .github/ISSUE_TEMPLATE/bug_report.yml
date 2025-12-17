@@ -1,0 +1,109 @@
+name: 🐞 Bug 报告
+description: 提交一个可复现的问题，帮助我们快速定位与修复。
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！为提高修复效率，请尽量按下方信息完整填写。
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过现有 Issue，确认没有重复。
+          required: true
+        - label: 我使用的是最新版本（或已说明具体版本/commit）。
+          required: true
+        - label: 我可以提供稳定的复现步骤（或已说明“无法稳定复现”）。
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本信息
+      description: |
+        请填写应用版本/commit（例如：v1.2.3 或 4f3c2ab），以及是否为 dev 构建。
+      placeholder: "例如：v0.3.1 / commit 4f3c2ab"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 运行环境
+      multiple: true
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os_version
+    attributes:
+      label: 系统版本（可选）
+      placeholder: "例如：macOS 15.2 / Windows 11 23H2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: 复现步骤
+      description: 以编号列出最小可复现步骤（尽量减少无关操作）。
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      placeholder: "描述你期望发生什么"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      placeholder: "描述实际发生了什么（含错误信息）"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志 / 报错堆栈（可选）
+      description: |
+        建议直接粘贴关键日志；如包含敏感信息请先脱敏。
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图 / 录屏（可选）
+      description: 可直接拖拽图片/视频到输入框上传。
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息（可选）
+      description: |
+        例如：是否必现、频率、是否回归、是否与特定文件/输入有关、临时绕过方案等。
+    validations:
+      required: false
+
+
