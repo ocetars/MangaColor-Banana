@@ -2,6 +2,7 @@ body:
   - type: textarea
     attributes:
       label: Goals
+      description: 请描述你的想法，包括功能、设计、交互等。
       description: Short list of what the feature request aims to address?
       value: |
         1.
@@ -9,16 +10,6 @@ body:
         3.
     validations:
       required: true
-  - type: textarea
-    attributes:
-      label: Non-Goals
-      description: Short list of what the feature request _does not_ aim to address?
-      value: |
-        1.
-        2.
-        3.
-    validations:
-      required: false
   - type: textarea
     attributes:
       label: Background
