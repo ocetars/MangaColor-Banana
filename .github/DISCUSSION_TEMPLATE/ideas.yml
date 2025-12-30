@@ -1,23 +1,13 @@
 body:
   - type: textarea
     attributes:
-      label: 想解决什么 / What problem to solve
-      description: 你希望这个项目改进/新增什么？一句话也可以 / What do you want to improve/add? One sentence is fine.
-      value: |
-        1. 
-        2. 
-        3. 
+      label: 想法产生的背景 / Background of the idea
+      description: 为什么我们确实需要它？ / Why do we really need it?
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 背景（可选） / Background (optional)
-      description: 为什么需要它？有没有替代方案？/ Why is it needed? Any alternatives?
+      label: 具体想法或解决方案 / Specific idea or solution
+      description: 请尽量详细地描述你的想法或方案 / Please describe your idea or proposal in detail.
     validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: 想法/方案（可选） / Idea / proposal (optional)
-      description: 你倾向的实现方式/交互？愿意 PR 也欢迎 / Your preferred approach/UX? PRs welcome.
-    validations:
-      required: false
+      required: true

@@ -13,22 +13,20 @@ body:
   - type: textarea
     attributes:
       label: 已尝试 / What you tried
-      description: 你已经试过哪些方法/步骤？结果如何？/ What have you tried and what happened?
+      description: 你已经试过哪些方法？结果如何？/ What have you tried and what happened?
       placeholder: |
-        1.
-        2.
-        3.
+        我尝试了……
     validations:
       required: false
 
   - type: textarea
     attributes:
-      label: 版本/环境（可选） / Version & environment (optional)
-      description: 例如 OS、App 版本、Node/Python 等 / e.g., OS, app version, Node/Python, etc.
-      placeholder: |
-        - OS：
-        - App 版本 / App version：
-        - 其它 / Others：
+      label: AstrBot 版本
+      description: 你也可以补充有关此问题的其它环境信息 / You can also provide other environment information related to this problem.
+      value: |
+        - AstrBot 版本：
+        - 部署方式：
+        - 其它：
     validations:
       required: false
  
