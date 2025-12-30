@@ -2,8 +2,7 @@ body:
   - type: textarea
     attributes:
       label: Goals
-      description: Short list of what the feature request aims to address?
-       要解决什么问题？
+      description: Short list of what the feature request aims to address? 要解决什么问题？
       value: |
         1.
         2.
