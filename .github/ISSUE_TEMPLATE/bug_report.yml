@@ -1,4 +1,4 @@
-name: 🐞 Bug 报告
+name: Bug 报告
 description: 提交一个可复现的问题，帮助我们快速定位与修复。
 title: "[Bug]: "
 labels:
