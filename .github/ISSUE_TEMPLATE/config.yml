@@ -4,7 +4,7 @@ blank_issues_enabled: false
 # 说明：url 需要是完整的 GitHub Discussions 链接。请把 <OWNER>/<REPO> 替换为你的仓库路径。
 contact_links:
   - name: 功能建议 / 新需求
-    url: https://github.com/ocetars/MangaColor-Banana/discussions/categories/ideas
+    url: https://github.com/ocetars/MangaColor-Banana/discussions/new?category=ideas
     about: 功能建议与产品讨论请发到 GitHub Discussions，便于归档与跟进。
   - name: 使用问题 / 讨论
     url: https://github.com/ocetars/MangaColor-Banana/discussions/categories/q-a
