@@ -3,11 +3,11 @@ blank_issues_enabled: false
 # Contact links 会显示在“新建 Issue”页面，引导用户去正确的渠道。
 # 说明：url 需要是完整的 GitHub Discussions 链接。请把 <OWNER>/<REPO> 替换为你的仓库路径。
 contact_links:
-  - name: 功能建议 / 新需求
+  - name: 功能想法 / Ideas
     url: https://github.com/ocetars/MangaColor-Banana/discussions/new?category=ideas
-    about: 功能建议与产品讨论请发到 GitHub Discussions，便于归档与跟进。
-  - name: 使用问题 / 讨论
+    about: 你对现有功能的想法或对新需求的讨论 / Your thoughts on existing features or discuss new requirements
+  - name: 使用问题 / Questions
     url: https://github.com/ocetars/MangaColor-Banana/discussions/categories/q-a
-    about: 使用相关问题优先在 Discussions 提问。
+    about: 使用问题与排错问答 / Usage issues and troubleshooting Q&A
 
 
