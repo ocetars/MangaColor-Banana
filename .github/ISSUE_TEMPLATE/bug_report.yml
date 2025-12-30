@@ -1,4 +1,4 @@
-name: "Bug 问题报告 / Bug issue report"
+name: "🐞 Bug 问题报告 / Bug issue report"
 description: 提交一个可复现的问题 / Submit a reproducible issue.
 title: "[Bug]: "
 labels:
