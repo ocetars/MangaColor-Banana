@@ -1,23 +1,23 @@
 body:
   - type: textarea
     attributes:
-      label: Goals
-      description: Short list of what the feature request aims to address? 要解决什么问题？
+      label: 想解决什么 / What problem to solve
+      description: 你希望这个项目改进/新增什么？一句话也可以 / What do you want to improve/add? One sentence is fine.
       value: |
-        1.
-        2.
-        3.
+        1. 
+        2. 
+        3. 
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Background
-      description: Discuss prior art, why do you think this feature is needed? Are there current alternatives?
+      label: 背景（可选） / Background (optional)
+      description: 为什么需要它？有没有替代方案？/ Why is it needed? Any alternatives?
     validations:
-      required: true
+      required: false
   - type: textarea
     attributes:
-      label: Proposal
-      description: How should this feature be implemented? Are you interested in contributing?
+      label: 想法/方案（可选） / Idea / proposal (optional)
+      description: 你倾向的实现方式/交互？愿意 PR 也欢迎 / Your preferred approach/UX? PRs welcome.
     validations:
-      required: true
+      required: false

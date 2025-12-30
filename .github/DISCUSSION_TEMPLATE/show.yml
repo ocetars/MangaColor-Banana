@@ -1,0 +1,11 @@
+body:
+  - type: textarea
+    attributes:
+      label: 你要展示什么 / What do you want to show
+      description: 贴图/链接/对比/成果都可以，随意分享 / Screenshots/links/comparisons/results—share anything you like.
+      value: |
+        - 内容 / Content:
+        - 图片/链接 / Images/links:
+        - 简单说明（可选）/ Notes (optional):
+    validations:
+      required: true
